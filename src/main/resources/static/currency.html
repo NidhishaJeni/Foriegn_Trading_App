@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    
+    <meta charset="UTF-8">
+
+    <title>Currency Management</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/navbar.css">
+</head>
+
+<body>
+
+<!-- NAVIGATION BAR -->
+<nav>
+
+    <h2>💹 Trading App</h2>
+
+    <ul>
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="trade.html">Trades</a></li>
+        <li><a href="currency.html">Currency</a></li>
+        <li><a href="report.html">Reports</a></li>
+        <li><a href="profile.html">Profile</a></li>
+        <li><a href="#" onclick="logout()">Logout</a></li>
+    </ul>
+
+</nav>
+
+<div class="container">
+
+    <h1>Currency Management</h1>
+
+    <!-- ADD CURRENCY -->
+
+    <div class="card">
+
+        <h2>Add New Currency</h2>
+
+        <input
+                type="text"
+                id="code"
+                placeholder="Currency Code (USD)">
+
+        <input
+                type="text"
+                id="name"
+                placeholder="Currency Name (US Dollar)">
+
+        <input
+                type="number"
+                id="rate"
+                placeholder="Exchange Rate">
+
+        <button onclick="addCurrency()">
+            Add Currency
+        </button>
+
+    </div>
+
+    <!-- UPDATE RATE -->
+
+    <div class="card">
+
+        <h2>Update Exchange Rate</h2>
+
+        <input
+                type="text"
+                id="updateCode"
+                placeholder="Currency Code">
+
+        <input
+                type="number"
+                id="newRate"
+                placeholder="New Exchange Rate">
+
+        <button onclick="updateRate()">
+            Update Rate
+        </button>
+
+    </div>
+
+    <!-- CURRENCY TABLE -->
+
+    <div class="card">
+
+        <h2>Available Currencies</h2>
+
+        <table>
+
+            <thead>
+
+            <tr>
+
+                <th>ID</th>
+                <th>Code</th>
+                <th>Name</th>
+                <th>Rate</th>
+                <th>Delete</th>
+
+            </tr>
+
+            </thead>
+
+            <tbody id="currencyTable">
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+</div>
+
+<script src="js/currency.js"></script>
+<script src="js/common.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+ <meta charset="UTF-8">
+
+    <title>Reports</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/navbar.css">
+
+</head>
+
+<body>
+
+<nav>
+
+    <h2>💹 Trading App</h2>
+
+    <ul>
+
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="trade.html">Trades</a></li>
+        <li><a href="currency.html">Currency</a></li>
+        <li><a href="report.html">Reports</a></li>
+        <li><a href="profile.html">Profile</a></li>
+        <li><a href="#" onclick="logout()">Logout</a></li>
+    </ul>
+
+</nav>
+
+<div class="container">
+
+<h1>Trading Reports</h1>
+
+<div class="summary-box">
+
+<div class="summary-card">
+
+<h3>Total Trades</h3>
+
+<h2 id="totalTrades">0</h2>
+
+</div>
+
+<div class="summary-card">
+
+<h3>Total Amount</h3>
+
+<h2 id="totalAmount">0</h2>
+
+</div>
+
+<div class="summary-card">
+
+<h3>Total Converted</h3>
+
+<h2 id="totalConverted">0</h2>
+
+</div>
+
+</div>
+
+<br>
+
+<div class="card">
+
+<h2>Trade Analysis</h2>
+
+<table>
+
+<tr>
+
+<td>Total Trades</td>
+
+<td id="tradeCount"></td>
+
+</tr>
+
+<tr>
+
+<td>Total Amount</td>
+
+<td id="amount"></td>
+
+</tr>
+
+<tr>
+
+<td>Total Converted Amount</td>
+
+<td id="converted"></td>
+
+</tr>
+
+</table>
+
+</div>
+
+</div>
+<script src="js/common.js"></script>
+<script src="js/report.js"></script>
+</body>
+
+</html>

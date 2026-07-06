@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+ <meta charset="UTF-8">
+    <title>Dashboard</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/navbar.css">
+
+</head>
+
+<body>
+
+<nav>
+
+    <h2>💹 Trading App</h2>
+
+    <ul>
+
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="trade.html">Trades</a></li>
+        <li><a href="currency.html">Currency</a></li>
+        <li><a href="report.html">Reports</a></li>
+        <li><a href="profile.html">Profile</a></li>
+        <li><a href="#" onclick="logout()">Logout</a></li>
+
+    </ul>
+
+</nav>
+
+<div class="container">
+
+    <h1>Dashboard</h1>
+
+    <!-- SUMMARY -->
+
+    <div class="summary-box">
+
+        <div class="summary-card">
+            <h3>Wallet Balance</h3>
+            <h2 id="wallet">₹50000</h2>
+        </div>
+
+        <div class="summary-card">
+            <h3>Total Trades</h3>
+            <h2 id="totalTrades">0</h2>
+        </div>
+
+        <div class="summary-card">
+            <h3>Total Amount</h3>
+            <h2 id="totalAmount">0</h2>
+        </div>
+
+        <div class="summary-card">
+            <h3>Total Converted</h3>
+            <h2 id="totalConverted">0</h2>
+        </div>
+
+    </div>
+
+    <br>
+
+    <div class="card">
+
+        <h2>Quick Actions</h2>
+
+        <button onclick="location.href='trade.html'">
+            New Trade
+        </button>
+
+        <button onclick="location.href='currency.html'">
+            Manage Currency
+        </button>
+
+        <button onclick="location.href='report.html'">
+            Reports
+        </button>
+
+    </div>
+
+    <div class="card">
+
+        <h2>Recent Trades</h2>
+
+        <table>
+
+            <thead>
+
+            <tr>
+
+                <th>ID</th>
+                <th>From</th>
+                <th>To</th>
+                <th>Type</th>
+                <th>Amount</th>
+                <th>Status</th>
+
+            </tr>
+
+            </thead>
+
+            <tbody id="recent-trades">
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+</div>
+
+<script src="js/common.js"></script>
+<script src="js/dashboard.js"></script>
+
+</body>
+
+</html>

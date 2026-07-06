@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+       <meta charset="UTF-8">
+
+    <title>Profile</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/navbar.css">
+
+</head>
+
+<body>
+
+<nav>
+
+    <h2>💹 Trading App</h2>
+
+    <ul>
+
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="trade.html">Trades</a></li>
+        <li><a href="currency.html">Currency</a></li>
+        <li><a href="report.html">Reports</a></li>
+        <li><a href="profile.html">Profile</a></li>
+        <li><a href="#" onclick="logout()">Logout</a></li>
+
+    </ul>
+
+</nav>
+
+<div class="container">
+
+    <div class="card">
+
+        <h1>My Profile</h1>
+
+        <table>
+
+            <tr>
+
+                <th>User ID</th>
+
+                <td id="id"></td>
+
+            </tr>
+
+            <tr>
+
+                <th>Username</th>
+
+                <td id="username"></td>
+
+            </tr>
+
+            <tr>
+
+                <th>Email</th>
+
+                <td id="email"></td>
+
+            </tr>
+
+        </table>
+
+        <br>
+
+        <button onclick="logout()">
+
+            Logout
+
+        </button>
+
+    </div>
+
+</div>
+
+<script src="js/profile.js"></script>
+<script src="js/common.js"></script>
+</body>
+
+</html>
